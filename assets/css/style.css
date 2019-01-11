@@ -1,0 +1,116 @@
+:root{
+    --clinic-primary-color:#6200EE;
+    --clinic-primary-color-rgba-half:rgba(98, 0, 238,0.5);
+    --clinic-secondary-color: #03DAC6;
+    --clinic-primary-color-variant:#3700B3;
+    --clinic-secondary-color-variant:#018786;
+    --clinic-white-color:#ffffff;
+    --clinic-white-variant-color:#f2f2f2;
+    --font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+/*GENERAL BOOTSTRAP TWEAKS START*/
+.btn-primary{
+    background-color: var(--clinic-primary-color-variant);
+    border:0;
+}
+.btn-primary:hover{
+    background-color: var(--clinic-primary-color);
+    box-shadow: 0 0 0 0.2rem var(--clinic-primary-color-rgba-half);
+}
+.btn-primary:focus,
+.btn-primary:visited,
+.btn-primary:active{
+    background-color: var(--clinic-primary-color)!important;
+    box-shadow: 0 0 0 0.2rem var(--clinic-primary-color-rgba-half)!important;
+}
+.form-control:focus{
+    border-color: var(--clinic-primary-color);
+    box-shadow: 0 0 0 0.2rem var(--clinic-primary-color-rgba-half)!important;
+}
+/*GENERAL BOOTSTRAP TWEAKS END*/
+
+/* MY PROJECT FRAMEWORK START*/
+.floating-button{
+    height:70px;
+    width:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:24px;
+    color:var(--clinic-white-color);
+    background-color:var(--clinic-secondary-color);
+    position: fixed;
+    bottom:50px;
+    right:50px;
+    border-radius:50%;
+    border:0;
+    cursor:pointer;
+}
+.floating-button:hover{
+    background: var(--clinic-primary-color-variant);
+    box-shadow:none!important;
+}
+.floating-button:focus{
+    outline:0;
+}
+.animated{
+    display: block!important;
+}
+/* MY PROJECT FRAMEWORK END*/
+
+/* DASHBOARD START */
+
+    /*sidebar start*/
+    .dashboard-sidebar{
+        background: var(--clinic-primary-color);
+        top:0;
+        bottom:0;
+        left:0;
+        min-height:600px;
+    }
+
+    .dashboard-sidebar nav li a{
+        color:var(--clinic-white-color);
+        font-size:18px;
+        display: block;
+        width: 100%;
+        word-break: break-all;
+        text-align: center;
+        padding:20px 10px;
+        text-decoration: none;
+        transition:all 0.4s ease-in;
+    }
+    .dashboard-sidebar nav li a:hover,
+    .dashboard-sidebar nav li.active a{
+        background-color:var(--clinic-white-color);
+        color:var(--clinic-primary-color);
+    }
+    .dashboard-sidebar nav li a i{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    /*sidebar end*/
+    
+    /*specialites start*/
+    .dashboard-add-speciality{
+        bottom:50px;
+        right:50px;
+        z-index: 1200;
+    }
+    .dashboard-add-speciality form{
+        position: relative;
+        bottom:80px;
+        right:50px;
+        background-color: var(--clinic-white-variant-color);
+    }
+    .dashboard-add-speciality .floating-button{
+        bottom:0px;
+        right:0px;
+    }
+    /*specialites end*/
+/* DASHBOARD END */

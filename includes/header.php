@@ -1,4 +1,3 @@
-<?php $directory = dirname($_SERVER['REQUEST_URI']);?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,14 +6,18 @@
     <title>ElVito</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="<?php echo $directory?>/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <!-- FONT AWESOME CSS -->
-    <link rel="stylesheet" href="<?php echo $directory?>/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <!-- Animate.css CSS -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
     <!-- WEBSITE CSS -->
-    <link rel="stylesheet" href="<?php echo $directory?>/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <!-- RESPONSIVE CSS -->
-    <link rel="stylesheet" href="<?php echo $directory?>/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 <body>
     
